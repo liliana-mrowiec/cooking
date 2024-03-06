@@ -1,0 +1,162 @@
+{% extends 'rango/base.html' %}
+{% load static %}
+
+<!-- CSS Stylesheets -->
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/base.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/homepage-style1.css' %}" type="text/css"> <!-- Ensure homepage-style1.css is imported after base.css -->
+{% endblock %}
+
+
+{% block content-it %}
+<body>
+    <section id="title">
+        <div class="container-fluid">
+
+            <!-- Title & Search Bar -->
+            <div class="row">
+                <div class="col-lg-6 welcome-text">
+                    <h1>Welcome to Cookify</h1>
+                    <p>Welcome to our recipe hub! Discover delicious dishes for every
+                        craving. Whether you're a pro cook or new to the kitchen, get
+                        ready to make yummy meals with us. Let's cook up some fun
+                        together!</p>
+
+                    <!-- Simple Search Bar -->
+                    <div class="search">
+                        <input type="text" class="search__input" placeholder="Search for recipes...">
+                        <button class="search__button">
+                            <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
+                                <g>
+                                    <path
+                                        d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 image-container">
+                    <img alt="IMAGE37392441242"
+                        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/502fe7c4-60ad-4536-a9d3-bbebdb8bc2be/e4c81995-ef9d-40a5-bdd0-5ff99f5cfea2?org_if_sml=174035&amp;force_format=original"
+                        class="home-page1-image37392441" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Browse by Category -->
+    <section id="categories">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 browse-text">
+                    <h2>Browse by Category</h2>
+                    <p>Not sure what to cook? No worries, we've got you covered! Check out our recipe categories and
+                        explore all the yummy dishes available.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 category-box">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1506280754576-f6fa8a873550?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Category Image" class="card-image">
+                        <div class="card-details">
+                            <p class="text-title">Quick & Easy</p>
+                            <!-- <p class="text-body">Here are the details of the card</p> -->
+                        </div>
+                        <button class="card-button">View Receipes</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 category-box">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1692071097529-320eb2b32292?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Category Image" class="card-image">
+                        <div class="card-details">
+                            <p class="text-title">Italian Cuisine</p>
+                        </div>
+                        <button class="card-button">View Receipes</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 category-box">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1547496502-affa22d38842?q=80&w=1954&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Category Image" class="card-image">
+                        <div class="card-details">
+                            <p class="text-title">Vegeterian</p>
+                        </div>
+                        <button class="card-button">View Receipes</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 category-box">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1602273660127-a0000560a4c1?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Category Image" class="card-image">
+                        <div class="card-details">
+                            <p class="text-title">Asian Cuisine</p>
+                            <!-- <p class="text-body">Here are the details of the card</p> -->
+                        </div>
+                        <button class="card-button">View Receipes</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 category-box">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1608500218987-0f2b3be34b47?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Category Image" class="card-image">
+                        <div class="card-details">
+                            <p class="text-title">Soups and Stews</p>
+                        </div>
+                        <button class="card-button">View Receipes</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 category-box">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1624300629298-e9de39c13be5?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Category Image" class="card-image">
+                        <div class="card-details">
+                            <p class="text-title">Mexican Cuisine</p>
+                        </div>
+                        <button class="card-button">View Receipes</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 category-box">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Category Image" class="card-image">
+                        <div class="card-details">
+                            <p class="text-title">Mediterranean Cuisine</p>
+                            <!-- <p class="text-body">Here are the details of the card</p> -->
+                        </div>
+                        <button class="card-button">View Receipes</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 category-box">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1632737173811-cfc7bf387a12?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Category Image" class="card-image">
+                        <div class="card-details">
+                            <p class="text-title">Healthy Eating</p>
+                        </div>
+                        <button class="card-button">View Receipes</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 category-box">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1519676867240-f03562e64548?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Category Image" class="card-image">
+                        <div class="card-details">
+                            <p class="text-title">Breakfast & Brunch</p>
+                        </div>
+                        <button class="card-button">View Receipes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+</body>
+{% endblock %}
